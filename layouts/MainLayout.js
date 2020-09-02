@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
-import Link from 'next/Link'
+import Link from 'next/link'
 import { useRouter } from 'next/router'
 
 const navListInit = {
