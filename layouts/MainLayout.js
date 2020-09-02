@@ -40,8 +40,9 @@ export default function MainLayout({ children }) {
 
 	useEffect(() => {
 		const scrollWatcher = () => {
-			window.addEventListener('scroll', handleScroll)
+			window.removeEventListener('scroll', handleScroll)
 		}
+		window.addEventListener('scroll', handleScroll)
 		return scrollWatcher;
 	},[])
 
@@ -77,7 +78,8 @@ export default function MainLayout({ children }) {
 		}
 	}
 
-	const scrollTop = () => window.scrollTo(0, 0)
+	// const scrollTop = () => window.scrollTo(0, 0)
+	const scrollTop = () => window.scrollTo({top: 0, behavior: "smooth"})
 
 	const handleScroll = (e) => {
 		const scrollY = e.path[1].scrollY

@@ -27,7 +27,7 @@ export default function Order({ List, orderId, cType }) {
 	}
 
 	const submit = () => {
-		const url = 'http://localhost:3000/test'
+		const url = 'http://localhost:3000/api/hello'
 		const body = { ...form }
 		const method = 'POST'
 		useHttp({ url, body, method })
