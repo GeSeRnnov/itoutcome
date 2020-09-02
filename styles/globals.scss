@@ -1,0 +1,98 @@
+/*@import "~materialize-css/dist/css/materialize.min.css";*/
+@import "./materialize.min.css";
+@import "./bootstrap.min.scss";
+$theme-bg: #343a40;
+$theme-font: #979a9d;
+$theme-active: #5d5f61;
+
+html,
+body {
+	padding: 0;
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+	background: #c9cad8;
+	scroll-behavior: smooth;
+
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container{
+	background: white;
+	min-height: 100vh;
+}
+
+	/*nav {
+		color:#fff;background-color:#ee6e73;width:100%;height:56px;line-height:56px
+	}*/
+.navbar {
+	.nav-item {
+		position: relative;
+		.dropdown-menu {
+			margin: 0;
+	    background: $theme-bg;
+	    color: $theme-font;
+	    display: block;
+	    visibility: hidden;
+      border-top: none;
+		  border-top-left-radius: 0;
+		  border-top-right-radius: 0;
+	    .dropdown-item{
+	    	/*white-space: pre-wrap;*/
+	    	color: $theme-font;
+		    &:hover {
+			    background: $theme-active;
+		    }
+	    }
+		}
+		/*a{
+			&:hover{
+				background: none;
+			}
+		}*/
+	}
+}
+
+.show-smooth{
+	visibility: visible !important;
+	transition: visibility 2s,  
+}
+.footer{
+	/*width: 100%;*/
+	min-height: 100px;
+	color: $theme-font;
+	padding-top: 20px; 
+	justify-content:center;
+	text-align: center;
+}
+.bm-5{
+	margin-bottom: 5em;
+}
+.bm-4{
+	margin-bottom: 4em;
+}
+.bm-3{
+	margin-bottom: 3em;
+}
+.bm-2{
+	margin-bottom: 2em;
+}
+.bm-1{
+	margin-bottom: 1em;
+}
+.list-ul li{
+	list-style-type: square !important;
+	/*text-indent: 2em;*/
+}
+.font-sm{
+	@media screen and (max-width:768px){
+		font-size: 2em;
+	}
+}
