@@ -5,8 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "prod_start": "NODE_ENV=production node server.js",
-    "start": "next start"
+    "start": "NODE_ENV=production node server.js",
+    "start npm": "next start"
   },
   "dependencies": {
     "@sendgrid/mail": "^7.2.4",
